@@ -1,0 +1,364 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <header class="site-header">
+    <div class="hero">
+      <div class="contenido-header">
+
+        <nav class="redes-sociales">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </nav>
+
+        <div class="contenido-texto">
+          <div class="informacion-evento">
+            <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12 Dic</p>
+            <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Barranquilla, MX</p>
+          </div>
+          <!--Informacion evento-->
+
+          <h1 class="nombre-sitio">GdlWebCamp</h1>
+          <p class="slogan">La mejor conferencia de <span>de diseño web</span></p>
+        </div>
+        <!--Contenido texto-->
+      </div><!-- Contenido header-->
+    </div>
+    <!--Contenido hero-->
+
+    <div class="barra">
+      <div class="contenedor">
+
+        <div class="logo">
+          <img src="img/logo.svg" alt="Logotipo">
+        </div>
+
+        <div class="menu-mobil">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+          <a href="#">Coferencia</a>
+          <a href="#">Calendario</a>
+          <a href="#">Invitados</a>
+          <a href="registro.html">Reservaciones</a>
+        </nav>
+
+      </div> <!-- Contenedor-->
+    </div> <!-- contenedor Barra-->
+  </header>
+
+  <section class="contenedor seccion">
+    <h2>Registro de usuarios</h2>
+
+    <form id="registro" class="registro" action="index.html" method="post">
+
+      <div id="datos-usuario" class="registro caja">
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+        </div><!--Campo-->
+
+        <div class="campo">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Tu apellido">
+        </div> <!--Campo-->
+
+        <div class="campo">
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" placeholder="Tu email">
+        </div><!--Campo-->
+
+        <div id="error"></div>
+      </div> <!-- Datos usuario-->
+
+      <div id="paquetes" class="paquetes">
+        <h3>Elije el número de boletos</h3>
+        <div class="contenedor-anuncios">
+          <div class="anuncio">
+            <h3>Pase por día (viernes)</h3>
+            <p class="numero">$30</p>
+            <ul>
+              <li>Bocadillos Gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>            
+            <label for="pase-dia">Boletos Deseados:</label>
+            <input type="number" min="0" max="3" id="pase-dia" placeholder="0">
+          </div>
+          <!--Anuncio-->
+
+          <div class="anuncio">
+            <h3>Todos los día</h3>
+            <p class="numero">$50</p>
+            <ul>
+              <li>Bocadillos Gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>
+            <label for="pase-completo">Boletos Deseados:</label>
+            <input type="number" min="0" max="3" id="pase-completo" placeholder="0">
+          </div>
+          <!--Anuncio-->
+
+          <div class="anuncio">
+            <h3>Pase por día 2(Viernes y sabado)</h3>
+            <p class="numero">$45</p>
+            <ul>
+              <li>Bocadillos Gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>
+            <label for="pase-dos-dias">Boletos Deseados:</label>
+            <input type="number" min="0" max="3" id="pase-dos-dias" placeholder="0">
+          </div>
+          <!--Anuncio-->
+        </div>
+      </div> <!--Paquetes-->
+
+
+      <div id="eventos" class="eventos">
+        <h3>Elige tus talleres</h3>
+        <div class="caja">
+
+            <div id="viernes" class="contenido-dia">
+                <h4>Viernes</h4>
+                <ul class="lista-opciones">
+                    <li>
+                        <p>Talleres:</p>
+                        <label><input type="checkbox" name="registro[]" id="taller_01" value="taller_01"><time>10:00</time>
+                            Responsive Web Design</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_02" value="taller_02"><time>12:00</time>
+                            Flexbox</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_03" value="taller_03"><time>14:00</time> HTML5
+                            y CSS3</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_04" value="taller_04"><time>17:00</time>
+                            Drupal</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_05" value="taller_05"><time>19:00</time>
+                            WordPress</label>
+                    </li>
+
+                    <li>
+                        <p>Conferencias:</p>
+                        <label><input type="checkbox" name="registro[]" id="conf_01" value="conf_01"><time>10:00</time> Como ser
+                            Freelancer</label>
+                        <label><input type="checkbox" name="registro[]" id="conf_02" value="conf_02"><time>17:00</time>
+                        Tecnologías del Futuro</label>
+                        <label><input type="checkbox" name="registro[]" id="conf_03" value="conf_03"><time>19:00</time> Seguridad
+                        en la Web</label>
+                    </li>
+
+                    <li>
+                        <p>Seminarios:</p>
+                        <label><input type="checkbox" name="registro[]" id="sem_01" value="sem_01"><time>10:00</time> Diseño UI y
+                            UX para móviles</label>
+                    </li>
+                </ul>         
+            </div><!--#viernes-->
+
+            <div id="sabado" class="contenido-dia">
+                <h4>Sábado</h4>
+                <ul class="lista-opciones">
+                    <li>
+                        <p>Talleres:</p>
+                        <label><input type="checkbox" name="registro[]" id="taller_06" value="taller_06"><time>10:00</time> AngularJS</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_07" value="taller_07"><time>12:00</time> PHP y MySQL</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_08" value="taller_08"><time>14:00</time> JavaScript Avanzado</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_09" value="taller_09"><time>17:00</time> SEO en Google</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_10" value="taller_10"><time>19:00</time> De Photoshop a HTML5 y CSS3</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_11" value="taller_11"><time>21:00</time> PHP Medio y Avanzado</label>
+                    </li>
+
+                    <li> 
+                        <p>Conferencias:</p>
+                        <label><input type="checkbox" name="registro[]" id="conf_04" value="conf_04"><time>10:00</time> Como crear una tienda online que venda millones en pocos días</label>
+                        <label><input type="checkbox" name="registro[]" id="conf_05" value="conf_05"><time>17:00</time> Los mejores lugares para encontrar trabajo</label>
+                        <label><input type="checkbox" name="registro[]" id="conf_06" value="conf_06"><time>19:00</time> Pasos para crear un negocio rentable</label>
+                    </li>
+
+                    <li>
+                        <p>Seminarios:</p>
+                        <label><input type="checkbox" name="registro[]" id="sem_02" value="sem_02"><time>10:00</time> Aprende a Programar en una mañana</label>
+                        <label><input type="checkbox" name="registro[]" id="sem_03" value="sem_03"><time>17:00</time> Diseño UI y UX para móviles</label>
+                    </li>
+                </ul>
+                </div> <!--#sabado-->
+
+            <div id="domingo" class="contenido-dia">
+                <h4>Domingo</h4>
+
+                <ul class="lista-opciones">
+                    <li>
+                        <p>Talleres:</p>
+                        <label><input type="checkbox" name="registro[]" id="taller_12" value="taller_12"><time>10:00</time>
+                            Laravel</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_13" value="taller_13"><time>12:00</time> Crea
+                            tu propia API</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_14" value="taller_14"><time>14:00</time>
+                            JavaScript y jQuery</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_15" value="taller_15"><time>17:00</time>
+                            Creando Plantillas para WordPress</label>
+                        <label><input type="checkbox" name="registro[]" id="taller_16" value="taller_16"><time>19:00</time>
+                            Tiendas Virtuales en Magento</label>
+                    </li>
+
+                    <li>
+                        <p>Conferencias:</p>
+                        <label><input type="checkbox" name="registro[]" id="conf_07" value="conf_07"><time>10:00</time> Como hacer
+                            Marketing en línea</label>
+                        <label><input type="checkbox" name="registro[]" id="conf_08" value="conf_08"><time>17:00</time> ¿Con que
+                            lenguaje debo empezar?</label>
+                        <label><input type="checkbox" name="registro[]" id="conf_09" value="conf_09"><time>19:00</time> Frameworks
+                            y librerias Open Source</label>
+                    </li>
+
+                    <li>
+                        <p>Seminarios:</p>
+                        <label><input type="checkbox" name="registro[]" id="sem_04" value="sem_04"><time>14:00</time> Creando una
+                            App en Android en una tarde</label>
+                        <label><input type="checkbox" name="registro[]" id="sem_05" value="sem_05"><time>17:00</time> Creando una
+                            App en iOS en una tarde</label>
+                    </li>
+                </ul>
+  
+            </div> <!--#domingo-->
+
+        </div> <!--.caja-->
+      </div> <!--#eventos-->
+
+      <div id="resumen" class="resumen">
+        <h3>Pago y Extras</h3>
+        <div class="caja">
+
+            <div class="extras">
+
+                <div class="orden">
+                    <label for="camisa-evento">Camisa del evento $10 <small>(promocion 7% dto.)</small></label>
+                    <input type="number" min="0" id="camisa-evento" size="3" placeholder="0">
+                </div><!-- Orden-->
+
+                <div class="orden">
+                    <label for="etiquetas">Camisa del evento $10 <small>(HTML5, CSS3, JavaScript)</small></label>
+                    <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
+                </div><!-- Orden-->
+
+                <div class="orden">
+                    <label for="regalo">Seleccione un regalo</label>
+                    <select id="regalo" required>
+                        <option value="">-Seleccione un regalo -</option>
+                        <option value="ETI">Etiquetas</option>
+                        <option value="PUL">Pulsera</option>
+                        <option value="PLU">Plumas</option>
+                    </select>
+                </div><!-- Orden-->
+
+                <input type="button" id="calcular" class="w-100 boton" value="Calcular">
+
+            </div>
+
+            <div class="total">
+                <p>Resumen:</p>
+                
+                <div id="resumen-compra"></div>
+
+                <p>Total:</p>
+                
+                <div id="suma-total"></div>
+               
+                <input type="submit" id="botonRegistro" class="w-100 boton" value="Pagar">
+            </div> <!-- total-->
+
+        </div> <!--Caja-->
+      </div> <!--Resumen-->
+
+    </form>
+  </section>
+
+  <footer class="site-footer">
+
+    <div class="informacion contenedor">
+      <div class="sobre-nosotros">
+        <h3>Sobre <span>gdlwebcamp</span></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laborum odit, voluptatum velit iure nisi
+          ex enim quae officia ab id sit sunt cum, totam debitis magni consequuntur quia nobis?</p>
+      </div>
+
+      <div class="ultimo-tweets">
+        <h3>Ultimos <span>tweets</span></h3>
+        <ul>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptates pariatur.</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptates pariatur.</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptates pariatur.</li>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <h3>Redes <span>Sociales</span></h3>
+        <nav class="redes-sociales">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <p class="copy">Todos los derechos reservados &copy;</p>
+
+  </footer>
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
